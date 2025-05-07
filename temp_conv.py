@@ -24,6 +24,9 @@ def main():
                 celc = ((fahr - 32) * 5 / 9)
                 print("Result: ", celc, " C°")
                 pause()
+            elif choice == 3:
+                print("Terminating converter... Thank you!")
+                break
             else:
                 print("Invalid input. Please try again.")
         except ValueError:
