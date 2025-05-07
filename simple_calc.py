@@ -1,11 +1,11 @@
 def pause():
     input("Press Enter to continue")
 
-def main():
-    print("\n=====================")
-    print("= Simple Calculator =")
-    print("=====================")
+print("\n=====================")
+print("= Simple Calculator =")
+print("=====================")
 
+def main():
     print("====== CHOICES ======")
     print("\n1. Addition")
     print("2. Subtraction")
