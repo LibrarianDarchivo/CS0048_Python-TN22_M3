@@ -1,19 +1,18 @@
 def pause():
     input("Press Enter to continue")
 
-print("=========================")
-print("= Temperature Converter =")
-print("=========================")
-
 def main():
-    print("======== CHOICES ========")
-
-    print("\n1. Fahrenheit to Celsius")
-    print("2. Celsius to Fahrenheit")
-    print("3. Exit")
+    print("=========================")
+    print("= Temperature Converter =")
+    print("=========================")
 
     while True:
         try:
+            print("======== CHOICES ========")
+            print("\n1. Fahrenheit to Celsius")
+            print("2. Celsius to Fahrenheit")
+            print("3. Exit")
+
             choice = int(input("Enter choice: "))
             if choice == 1:
                 celc = int(input("Enter temperature (In C°): "))
