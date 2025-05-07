@@ -1,8 +1,8 @@
 def main():
-    tasks = [] # goated google sirch
+    tasks = []
 
     print("\n=====================")
-    print("=  Your To-do List  =")
+    print("= Your To-do List =")
     print("=====================")
 
     while True:
@@ -22,12 +22,21 @@ def main():
                 else:
                     print("Task cannot be empty.")
             elif choice == 2:
-                task = input("Enter the task to remove: ").strip()
-                if task in tasks:
-                    tasks.remove(task)
-                    print("Task removed.")
-                else:
-                    print("Task not found.")
+                if not tasks:
+                    print("No tasks to remove.")
+                    continue
+                print("\nCurrent Tasks:")
+                for i, task in enumerate(tasks, 1):
+                    print(f"{i}. {task}")
+                try:
+                    task_num = int(input("Enter the task number to remove: "))
+                    if 1 <= task_num <= len(tasks):
+                        removed = tasks.pop(task_num - 1)
+                        print(f"Task '{removed}' removed.")
+                    else:
+                        print("Invalid task number.")
+                except ValueError:
+                    print("Please enter a valid number.")
             elif choice == 3:
                 if tasks:
                     print("\nCurrent/Active Tasks:")
