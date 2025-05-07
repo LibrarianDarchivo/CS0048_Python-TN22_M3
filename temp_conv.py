@@ -1,10 +1,11 @@
 def pause():
     input("Press Enter to continue")
 
+print("=========================")
+print("= Temperature Converter =")
+print("=========================")
+
 def main():
-    print("=========================")
-    print("= Temperature Converter =")
-    print("=========================")
     print("======== CHOICES ========")
 
     print("\n1. Fahrenheit to Celsius")
