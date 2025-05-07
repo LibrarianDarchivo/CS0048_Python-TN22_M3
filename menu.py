@@ -13,11 +13,12 @@ def pause():
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+print("\n=====================")
+print("=     MAIN MENU     =")
+print("=====================")
+
 while True:
     try:
-        print("\n=====================")
-        print("=     MAIN MENU     =")
-        print("=====================")
         print("====== CHOICES ======")
 
         print("\n1. Simple Calculator")
