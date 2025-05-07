@@ -1,8 +1,6 @@
 def pause():
     input("Press Enter to continue")
 
-
-
 def main():
     print("\n=====================")
     print("= Simple Calculator =")
