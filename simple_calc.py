@@ -1,20 +1,22 @@
 def pause():
     input("Press Enter to continue")
 
-print("\n=====================")
-print("= Simple Calculator =")
-print("=====================")
+
 
 def main():
-    print("====== CHOICES ======")
-    print("\n1. Addition")
-    print("2. Subtraction")
-    print("3. Multiplication")
-    print("4. Division")
-    print("5. Exit")
+    print("\n=====================")
+    print("= Simple Calculator =")
+    print("=====================")
 
     while True:
         try:
+            print("====== CHOICES ======")
+            print("\n1. Addition")
+            print("2. Subtraction")
+            print("3. Multiplication")
+            print("4. Division")
+            print("5. Exit")
+
             choice = int(input("\nEnter your choice: "))
             if choice == 1:
                 num1 = int(input("Enter first number: "))
